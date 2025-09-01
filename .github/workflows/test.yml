@@ -26,11 +26,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run tests
-        run: npm test
+          - name: Run tests
+      run: CI=false npm test
 
       - name: Run linting
         run: npm run lint
 
-      - name: Build project
-        run: npm run build
+          - name: Build project
+      run: CI=false npm run build

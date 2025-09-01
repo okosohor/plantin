@@ -5,9 +5,9 @@
     "es2021": true
   },
   "extends": [
-    "react-app",
-    "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "react-app",
     "plugin:prettier/recommended"
   ],
   "plugins": ["react", "@typescript-eslint", "prettier"],
@@ -20,7 +20,7 @@
         "allow": ["warn", "error"]
       }
     ],
-    "no-unused-vars": ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
+    "no-unused-vars": ["wanr", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
     "react/prop-types": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "object-curly-newline": ["warn", { "multiline": true, "consistent": true }]

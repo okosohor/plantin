@@ -1,9 +1,7 @@
-import Page from './page';
+import Blog from './pages/Blog';
 
 function App() {
-  const aa = 1;
-  console.log(1)
-  return <Page />;
+  return < Blog />;
 }
 
 export default App;

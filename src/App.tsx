@@ -1,7 +1,7 @@
 import Blog from './pages/Blog';
 
 function App() {
-  return < Blog />;
+  return <Blog />;
 }
 
 export default App;

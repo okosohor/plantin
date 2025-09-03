@@ -1,4 +1,4 @@
-import Arrow from "icons/Arrow"
+import Arrow from 'icons/Arrow'
 
 export default function Breadcrumbs() {
 
@@ -10,14 +10,14 @@ export default function Breadcrumbs() {
       {
         pathSegments.map((item, i) => (
           <>
-          <a 
-            key={item} 
-            href="#"
-            className={"text-brand-grey-text font-medium text-[1rem] " + (i !== 0 ? 'hidden lg:inline' : '')}
-          >
-            {item}
-          </a>
-          <Arrow size={24} className="mx-2 hidden lg:flex"/>
+            <a 
+              key={item} 
+              href="#"
+              className={'text-brand-grey-text font-medium text-[1rem] ' + (i !== 0 ? 'hidden lg:inline' : '')}
+            >
+              {item}
+            </a>
+            <Arrow size={24} className="mx-2 hidden lg:flex"/>
           </>
         ))
       }

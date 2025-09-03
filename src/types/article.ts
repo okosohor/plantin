@@ -5,5 +5,4 @@ export interface Article {
     time: string,
     date: string,
     image: string,
-    type?: 'new' | 'top'
 }

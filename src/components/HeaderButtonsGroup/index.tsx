@@ -1,6 +1,6 @@
-import Avatar from "icons/Avatar";
-import BurgerMenu from "icons/BurgerMenu";
-import SearchInputSmall from "icons/SearchInputSmall";
+import Avatar from 'icons/Avatar';
+import BurgerMenu from 'icons/BurgerMenu';
+import SearchInputSmall from 'icons/SearchInputSmall';
 
 export default function HeaderButtonGroup() {
   return (

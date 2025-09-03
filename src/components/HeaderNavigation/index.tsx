@@ -1,4 +1,4 @@
-import { HEADER_NAVIGATION_LINKS } from "data/navigationLinks";
+import { HEADER_NAVIGATION_LINKS } from 'data/navigationLinks';
 
 export default function HeaderNavigation() {
   return (

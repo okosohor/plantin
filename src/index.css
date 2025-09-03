@@ -7,3 +7,7 @@ body {
   background-color: #F6F6F6;
   font-family: 'Poppins', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}

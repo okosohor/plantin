@@ -1,4 +1,4 @@
-import { NavigationLink } from "types/navigationsLinks";
+import { NavigationLink } from 'types/navigationsLinks';
 
 export const HEADER_NAVIGATION_LINKS: NavigationLink[] = [
   {

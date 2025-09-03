@@ -18,13 +18,18 @@ export default function BlogSection({ title, tag = false, largeCards = false, ar
     <>
       {tag && <Tag/>}
       {title && <CardListHeading title={title}/>}
+      {(title && articles.length === 0 ) && (
+        
+        <h4 className="font-bold text-[1.5rem] text-brand-black-title">Articles not founded</h4>
+      )
+      }
       <section className={`w-full grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-${gridCols} lg:gap-y-14 mb-6 lg:mb-[3.5rem]`}>
         {articles.map(item => 
           <Card isLarge={largeCards} key={item.id} article={item}/>
         )}
         {
         //only for demo
-          placeholder && (
+          (placeholder && articles.length === 0) && (
             <>
               <CardPlaceholder/>
               <CardPlaceholder/>

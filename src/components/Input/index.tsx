@@ -2,12 +2,16 @@ import SearchInput from 'icons/SearchInput';
 
 interface Props {
   placeholder?: string,
+  query: string,
+  handleSearch: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-export default function Input ({ placeholder = 'Search', }: Props) {
+export default function Input ({ placeholder = 'Search', query, handleSearch }: Props) {
   return (
     <label className="gap-4 cursor-text flex justify-between rounded-xl p-[0.625rem] lg:p-4 overflow-hidden items-center bg-white w-full lg:max-w-[32.625rem] border-2 border-transparent focus-within:border-brand-grey-text transition-all duration-100">
       <input
+        value={query}
+        onChange={handleSearch}
         placeholder={placeholder}
         type="text"
         className="w-full outline-none focus:outline-none placeholder:text-brand-grey-text [caret-color:#91A0B6] text-brand-black-secondary text-sm lg:text-[1rem]"

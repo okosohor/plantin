@@ -27,7 +27,7 @@ export default function Blog() {
   return (
     <>
       <Header />
-      <main className="pt-16 lg:max-w-[1074px] mb-[6rem] lg:mb-[6.25rem] lg:mx-auto p-4 lg:p-0">
+      <main className="pt-16 lg:max-w-[1074px] mb-[6rem] lg:mb-[6.25rem] lg:mx-auto p-4 lg:p-0 lg:pt-16">
         <Breadcrumbs/>
         <HeroBlock query={query} handleSearch={handleSearch}/>
         <CardList articles={{
